@@ -43,7 +43,8 @@ html, body {
 .header__ul {
    display: flex;
    gap: 30px;
-   justify-content: end;
+   justify-content: center;
+   align-items: center;
  }
 .header__link {
    font-family: inherit;
@@ -138,5 +139,20 @@ html, body {
    }
    .slider__rigth {
       right: -50px;
+   }
+ }
+ @media(max-width: 500px) {
+   .header__ul {
+      flex-direction: column;
+      gap: 5px;
+   }
+   .start__slider {
+      width: 256px;
+   }
+   .slider__left {
+      left: -30px;
+   }
+   .slider__rigth {
+      right: -30px;
    }
  }
